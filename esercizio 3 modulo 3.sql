@@ -41,7 +41,7 @@ disponibilità boolean not null,
 titolo varchar(100),
 sviluppatore varchar(100) not null,
 primary key (IDstore,IDsettore,settore,titolo,sviluppatore),
-foreign key (IDstore, IDsettore) references Store(IDstore,IDsettore) on update cascade on delete no action,
+foreign key (IDstore) references Store(IDstore) on update cascade on delete no action,
 foreign key (titolo,sviluppatore) references Videogioco(titolo,sviluppatore) on update cascade on delete no action
 );
 
