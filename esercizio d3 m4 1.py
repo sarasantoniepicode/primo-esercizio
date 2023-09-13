@@ -37,6 +37,10 @@ else:
 
 studenti_2 = ["Alex", "Bob", "Cindy", "Dan", "Emma", "Faith", "Grace", "Henry"]
 corsi_2 = ["Cybersecurity", "Data Analyst", "Backend", "Frontend", "Data Analyst", "Backend"]
+corsi_2.append("Frontend")
+corsi_2.append("Cybersecurity")
+if len(studenti_2)== len(corsi_2):
+   print("le liste hanno la stessa lunghezza.\n Ecco la lista corsi:\n" + str(corsi_2))
 
 
 fr_6=input(str("inserire la stringa da elaborare:"))
